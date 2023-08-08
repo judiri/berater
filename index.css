@@ -58,6 +58,10 @@ nav a {
   border-radius: 5px;
 }
 
+.menu nav ul li a.active {
+  color: lightblue;
+}
+
 footer {
   display: flex;
   align-items: center;

@@ -54,12 +54,6 @@ nav a {
 }
 
 .menu a:hover {
-  content: "";
-  position: absolute;
-  bottom: -5px; /* Abstand des Balkens von unten */
-  left: 0;
-  width: 100%;
-  height: 2px; /* Dicke des Balkens */
   background-color: lightblue;
   border-radius: 5px;
 }

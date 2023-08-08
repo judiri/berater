@@ -1,21 +1,11 @@
-const themeToggle = document.getElementById('theme-toggle');
-  let isDarkMode = true; // Assuming the initial mode is dark mode
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+}
 
-  themeToggle.addEventListener('click', () => {
-    const themeIcon = themeToggle.getAttribute('src');
-    if (isDarkMode) {
-      themeToggle.setAttribute('src', 'sun.png'); // Switch to light mode
-      isDarkMode = false;
-    } else {
-      themeToggle.setAttribute('src', 'moon.png'); // Switch to dark mode
-      isDarkMode = true;
-    }
-	
-	document.getElementById('help').addEventListener('click', () => {
-  // Fügen Sie hier den Code zum Erstellen des Tickets ein
-  // ...
-  
-  // Benachrichtigung mit SweetAlert anzeigen
-  swal('Ticket erstellt!', 'Das Ticket wurde erfolgreich erstellt.', 'success');
-});
-  });
+// Elemente auswählen
+const header = document.querySelector('header');
+const logo = document.querySelector('.logo');
+
+// Event Listener für den Dark-Modus-Schalter
+header.addEventListener('click', toggleDarkMode);

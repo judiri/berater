@@ -9,7 +9,21 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background-color: rgba(240, 240, 240, 0.8); /* Hier kann der Alpha-Wert angepasst werden */
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background-image: url('pfad/zum/bild.png'); /* Pfad zum Bild anpassen */
+  background-size: cover;
+  background-position: center center;
+  transition: background-image 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark-mode .logo {
+  background-image: url('pfad/zum/dark-mode-bild.png'); /* Pfad zum Dark-Mode-Bild anpassen */
 }
 
 header h1 {

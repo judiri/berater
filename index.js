@@ -1,11 +1,11 @@
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle('dark-mode');
-}
+// JavaScript-Code, um die E-Mail zu senden
+        document.getElementById("erstelleTicket").addEventListener("click", function () {
+            // Erstellen einer E-Mail mit dem Text "test"
+            var emailBody = "test";
 
-// Elemente auswählen
-const header = document.querySelector('header');
-const logo = document.querySelector('.logo');
+            // Erstellen des E-Mail-Links
+            var emailLink = "mailto:deine-email@example.com?subject=Neues%20Ticket&body=" + encodeURIComponent(emailBody);
 
-// Event Listener für den Dark-Modus-Schalter
-header.addEventListener('click', toggleDarkMode);
+            // Öffnen des E-Mail-Clients
+            window.location.href = emailLink;
+        });

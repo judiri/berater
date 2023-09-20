@@ -83,7 +83,6 @@ nav a {
 }
 
 footer {
-  display: flex;
   align-items: center;
   position: absolute;
   padding: 10px;

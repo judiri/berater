@@ -87,11 +87,12 @@ footer {
 }
 
 p{
-  
+  font-weight: bold;
+  text-align: center;
 }
 
 button{
-  
+  text-align: center;
 }
 
 

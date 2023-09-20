@@ -2,6 +2,8 @@ body {
   margin: 0;
   overflow: hidden;
   background-image: url(VBanner.png);
+  font-weight: bold;
+  text-align: center;
 }
 
 header {
@@ -92,8 +94,7 @@ footer {
     /* Weitere Stilregeln hier */
 }
 h2{
-  font-weight: bold;
-  text-align: center;
+  
 }
 
 

@@ -4,17 +4,17 @@ body {
   background-image: url(VBanner.png);
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
 body h2{
   font-weight: bold;
   text-align: center;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Fügen Sie diese Zeile hinzu */
-  padding: 10px;
-  background-color: rgba(240, 240, 240, 0.8);
 }
 
 .logo {

@@ -4,7 +4,7 @@
             var emailBody = "test";
 
             // Erstellen des E-Mail-Links
-            var emailLink = "mailto:deine-email@example.com?subject=Neues%20Ticket&body=" + encodeURIComponent(emailBody);
+            var emailLink = "mailto:judiri.twitch@gmail.com" + encodeURIComponent(emailBody);
 
             // Öffnen des E-Mail-Clients
             window.location.href = emailLink;

@@ -2,6 +2,9 @@ body {
   margin: 0;
   overflow: hidden;
   background-image: url(VBanner.png);
+}
+
+body h2{
   font-weight: bold;
   text-align: center;
 }

@@ -91,6 +91,9 @@ footer {
     background-color: white;
     /* Weitere Stilregeln hier */
 }
+p{
+  font-weight: bold;
+}
 
 
 

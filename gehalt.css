@@ -85,8 +85,10 @@ nav a {
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: absolute;
   padding: 10px;
+  bottom: 0;
+    width: 100%;
   background-color: gray;
 }
 .balken{

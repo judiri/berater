@@ -83,7 +83,7 @@ footer {
   padding: 10px;
   bottom: 0;
   width: 100%;
-  height: 15px;
+  height: 55px;
   background-color: gray;
 }
 
@@ -93,6 +93,7 @@ p{
 }
 
 button{
+  text-align: center;
   text-decoration: none; /* Entfernt die Unterstreichung des Links */
   color: inherit; /* Verwendet die Standardtextfarbe */
   cursor: text; /* Ändert den Cursor in einen Textcursor */

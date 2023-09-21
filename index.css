@@ -12,22 +12,9 @@ header {
   background-color: rgba(240, 240, 240, 0.8);
 }
 
-.logo {
-  width: 30px;
-  height: 30px;
-  background-image: url('C:\Users\Max\Desktop\Projekt\moon.png'); /* Pfad zum Bild anpassen */
-  background-size: cover;
-  background-position: center center;
-  transition: background-image 0.3s ease-in-out;
-}
-
-/* Dark Mode */
-body.dark-mode .logo {
-  background-image: url('pfad/zum/dark-mode-bild.png'); /* Pfad zum Dark-Mode-Bild anpassen */
-}
-
 header h1 {
   margin: 0;
+  text-align: left;
 }
 
 nav a {

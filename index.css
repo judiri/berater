@@ -95,9 +95,12 @@ p{
 
 button{
   text-align: center;
+  cursor: text; /* Ändert den Cursor in einen Textcursor */
+}
+
+button{
   text-decoration: none; /* Entfernt die Unterstreichung des Links */
   color: inherit; /* Verwendet die Standardtextfarbe */
-  cursor: text; /* Ändert den Cursor in einen Textcursor */
 }
 
 

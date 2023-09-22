@@ -26,14 +26,15 @@
 </header><br><br><br>
 <h2>Du brauchst Hilfe bei der Erstellung einer eigenen Webseite?</h2><br>
 <h1>Ticket erstellen</h1>
-	<div class="ticket-form">
-        <input type="email" id="email" placeholder="Ihre E-Mail-Adresse"><br>
-        <textarea id="problem" placeholder="Beschreiben Sie Ihr Problem"></textarea><br>
-        <button onclick="sendTicket()">Senden</button>
-    </div>
-    <div id="ticket-list">
-        <!-- Hier werden die eingereichten Tickets angezeigt -->
-    </div>
+	 <form id="emailForm">
+        <label for="email">E-Mail-Adresse:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button type="button" onclick="sendEmail()">E-Mail senden</button>
+    </form>
 <script src="index.js"></script>
 </body>
 </html>

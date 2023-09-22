@@ -24,7 +24,14 @@
 	</div>
 </header><br><br><br>
 <p>Brauchst du Hilfe? Dann klick auf'm Button, um ein Ticket zu erstellen</p><br>
-<button id="erstelleTicket"><a href = "mailto: itberater.judiri@gmail.com">Ticket erstellen</a></button><br><br><br><br>
+<div class="ticket-form">
+        <input type="email" id="email" placeholder="Ihre E-Mail-Adresse"><br>
+        <textarea id="problem" placeholder="Beschreiben Sie Ihr Problem"></textarea><br>
+        <button onclick="sendTicket()">Senden</button>
+    </div>
+    <div id="ticket-list">
+        <!-- Hier werden die eingereichten Tickets angezeigt -->
+    </div>
 <footer>
 <h1>Impressum</h1><br><br>
 <p>Email:</p><a href = "mailto: itberater.judiri@gmail.com">Email senden</a>

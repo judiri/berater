@@ -1,11 +1,24 @@
-// JavaScript-Code, um die E-Mail zu senden
-        document.getElementById("erstelleTicket").addEventListener("click", function () {
-            // Erstellen einer E-Mail mit dem Text "test"
-            var emailBody = "test";
+function sendTicket() {
+    const email = document.getElementById('email').value;
+    const problem = document.getElementById('problem').value;
 
-            // Erstellen des E-Mail-Links
-            var emailLink = "mailto:judiri.twitch@gmail.com" + encodeURIComponent(emailBody);
+    if (email && problem) {
+        const ticket = document.createElement('div');
+        ticket.className = 'ticket';
+        ticket.innerHTML = `
+            <h3>${email}</h3>
+            <p>${problem}</p>
+        `;
+        
+        document.getElementById('ticket-list').appendChild(ticket);
 
-            // Öffnen des E-Mail-Clients
-            window.location.href = emailLink;
-        });
+        // Zurücksetzen der Eingabefelder
+        document.getElementById('email').value = '';
+        document.getElementById('problem').value = '';
+
+        // Popup anzeigen
+        alert('Ticket ist angekommen');
+    } else {
+        alert('Bitte füllen Sie alle Felder aus.');
+    }
+}

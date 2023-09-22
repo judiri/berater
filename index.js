@@ -1,24 +1,35 @@
-function sendTicket() {
-    const email = document.getElementById('email').value;
-    const problem = document.getElementById('problem').value;
+function sendEmail() {
+            const emailInput = document.getElementById("email").value;
+            const messageInput = document.getElementById("message").value;
+            const sendGridApiKey = "DEIN_SENDGRID_API_KEY";
 
-    if (email && problem) {
-        const ticket = document.createElement('div');
-        ticket.className = 'ticket';
-        ticket.innerHTML = `
-            <h3>${email}</h3>
-            <p>${problem}</p>
-        `;
-        
-        document.getElementById('ticket-list').appendChild(ticket);
+            const data = {
+                personalizations: [
+                    {
+                        to: [{ email: "judiri.twitch@gmail.com" }],
+                        subject: "Test-E-Mail"
+                    }
+                ],
+                from: { email: emailInput },
+                content: [{ type: "text/plain", value: messageInput }]
+            };
 
-        // Zurücksetzen der Eingabefelder
-        document.getElementById('email').value = '';
-        document.getElementById('problem').value = '';
-
-        // Popup anzeigen
-        alert('Ticket ist angekommen');
-    } else {
-        alert('Bitte füllen Sie alle Felder aus.');
-    }
-}
+            fetch("https://api.sendgrid.com/v3/mail/send", {
+                method: "POST",
+                headers: {
+                    "Authorization": `Bearer ${sendGridApiKey}`,
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (response.status === 202) {
+                    alert("E-Mail erfolgreich gesendet!");
+                } else {
+                    alert("Fehler beim Senden der E-Mail.");
+                }
+            })
+            .catch(error => {
+                console.error("Fehler beim Senden der E-Mail:", error);
+            });
+        }

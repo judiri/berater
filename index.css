@@ -1,11 +1,22 @@
 body {
-  margin: 0;
-  overflow: hidden;
-  background-image: url(VBanner.png);
-  background-size: cover;
-  background-repeat: no-repeat; 
-  background-position: center center;
-  text-align: center;
+    margin: 0;
+    overflow: hidden;
+    background-image: url(VBanner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    position: relative; /* Damit wir das Pseudo-Element positionieren können */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px; /* Höhe der transparenten Ecke anpassen */
+    background: linear-gradient(to bottom left, transparent 50%, #fff 50%); /* Transparente Ecke erzeugen */
 }
 
 header {

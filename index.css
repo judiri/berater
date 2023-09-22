@@ -27,16 +27,6 @@ body {
     background-color: #555; /* Farbe des Thumb bei Hover-Zustand */
 }
 
-body::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px; /* Höhe der transparenten Ecke anpassen */
-    background: linear-gradient(to bottom left, transparent 50%, #fff 50%); /* Transparente Ecke erzeugen */
-}
-
 header {
   display: flex;
   padding: 10px;

@@ -40,7 +40,7 @@ header h1 {
 
 header button{
   border-radius: 50px 0;
-  text-align: center;
+  margin-left: auto;
   padding: 10px 20px;
   background-color: blue;
   color: yellow;

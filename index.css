@@ -17,8 +17,8 @@ body::before {
     left: 50%;
     width: 200%;
     height: 100px; /* Die Höhe des "V"-Teils */
-    background: white; /* Weißer Hintergrund */
-    transform: translateX(-50%) rotate(-15deg); /* Rotieren und positionieren */
+    background: black; /* Weißer Hintergrund */
+    transform: translateX(-15%) rotate(-45deg); /* Rotieren und positionieren */
     z-index: 1; /* Über dem Hintergrundbild */
 }
 

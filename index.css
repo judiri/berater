@@ -68,12 +68,8 @@ nav a {
 .menu ul {
   list-style: none;
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
-}
-
-.menu li {
   text-align: center;
 }
 

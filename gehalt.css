@@ -71,6 +71,7 @@ nav a {
 .menu a {
   text-decoration: none;
   color: #000;
+  border-bottom: 2px solid violet;
 }
 
 .menu a:hover {

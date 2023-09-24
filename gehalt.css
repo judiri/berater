@@ -82,19 +82,26 @@ nav a {
   display: flex;
   margin: 0;
   padding: 0;
-  text-align: center;
+  justify-content: space-between; /* Fügen Sie diese Zeile hinzu */
+  max-width: 400px; /* Passen Sie die max. Breite an Ihren gewünschten Abstand an */
+  width: 100%; /* Fügen Sie diese Zeile hinzu, um es responsiv zu machen */
 }
 
 .menu li {
   text-align: center;
 }
 
-.menu li:last-child {
-  margin-right: 0;
-}
-
 .menu a {
   text-decoration: none;
+}
+
+/* Fügen Sie diesen Stil für den Abstand zwischen den Links hinzu */
+.menu li:not(:last-child) {
+  margin-right: 20px; /* Passen Sie den Abstand nach Ihren Wünschen an */
+}
+
+.menu li:last-child {
+  margin-right: 0;
 }
 
 .menu a:hover {

@@ -95,7 +95,6 @@ nav a {
 
 .menu a {
   text-decoration: none;
-  border-bottom: 2px solid violet; 
 }
 
 .menu a:hover {
@@ -103,7 +102,7 @@ nav a {
 }
 
 .menu nav ul li a.active {
-  color: lightblue;
+  border-bottom: 2px solid violet;
 }
 
 p{

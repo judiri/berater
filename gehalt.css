@@ -1,33 +1,63 @@
 body {
-  margin: 0;
-  overflow: hidden;
-  background-image: url(VBanner.png);
+    margin: 0;
+    overflow: hidden;
+    background-image: url(VBanner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    overflow-y: scroll;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20%;
+    height: 5px; /* Die Höhe des "V"-Teils */
+    background: black; /* Weißer Hintergrund */
+    transform: translateX(-30%) rotate(-45deg); /* Rotieren und positionieren */
+    z-index: 1; /* Über dem Hintergrundbild */
+}
+
+/* Ändern Sie den Stil der Scrollleiste nach Ihren Wünschen */
+::-webkit-scrollbar {
+    width: 10px; /* Breite der Scrollleiste */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Hintergrundfarbe des Scrollleistenbereichs */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Farbe des Scrollleisten-Thumb (der bewegliche Teil) */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Farbe des Thumb bei Hover-Zustand */
 }
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 10px;
-  background-color: rgba(240, 240, 240, 0.8);
-}
-
-h2{
-  font-weight: bold;
-  text-align: center;
-}
-
-.logo {
-  width: 30px;
-  height: 30px;
-  background-image: url('C:\Users\Max\Desktop\Projekt\moon.png'); /* Pfad zum Bild anpassen */
-  background-size: cover;
-  background-position: center center;
-  transition: background-image 0.3s ease-in-out;
+  background-color: transparent;
 }
 
 header h1 {
   margin: 0;
+  text-align: left;
+}
+
+header button{
+  border-radius: 50px 0;
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: blue;
+  color: yellow;
+  border: none;
+  cursor: pointer;
 }
 
 nav a {
@@ -50,13 +80,13 @@ nav a {
 .menu ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .menu li {
-  margin-right: 10px;
+  text-align: center;
 }
 
 .menu li:last-child {
@@ -65,34 +95,26 @@ nav a {
 
 .menu a {
   text-decoration: none;
-  color: #000;
-  border-bottom: 2px solid violet;
+  border-bottom: 2px solid violet; 
 }
 
 .menu a:hover {
-  border-bottom: 2px solid violet;
+  border-bottom: 2px solid violet; 
 }
 
 .menu nav ul li a.active {
   color: lightblue;
 }
 
-footer {
+p{
+  font-weight: bold;
   text-align: center;
-  position: absolute;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
-  background-color: gray;
-}
-.balken{
-  text-align: center;
-  width: 100px;
-    height: 20px;
-    background-color: white;
-    /* Weitere Stilregeln hier */
 }
 
+button{
+  cursor: pointer; /* Ändert den Cursor in einen Textcursor */
+}
 
-
-
+.ticket-form {
+  margin-bottom: 20px;
+}

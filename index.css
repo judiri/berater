@@ -102,6 +102,10 @@ nav a {
   border-bottom: 2px solid violet; 
 }
 
+.menu a.active {
+  border-bottom: 2px solid violet;
+}
+
 .menu nav ul li a.active {
   border-bottom: 2px solid violet;
 }

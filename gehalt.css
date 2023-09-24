@@ -26,11 +26,6 @@ h2{
   transition: background-image 0.3s ease-in-out;
 }
 
-/* Dark Mode */
-body.dark-mode .logo {
-  background-image: url('pfad/zum/dark-mode-bild.png'); /* Pfad zum Dark-Mode-Bild anpassen */
-}
-
 header h1 {
   margin: 0;
 }
@@ -75,8 +70,7 @@ nav a {
 }
 
 .menu a:hover {
-  background-color: lightblue;
-  border-radius: 5px;
+  border-bottom: 2px solid violet;
 }
 
 .menu nav ul li a.active {

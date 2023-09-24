@@ -87,10 +87,6 @@ nav a {
   width: 100%; /* Fügen Sie diese Zeile hinzu, um es responsiv zu machen */
 }
 
-.menu li {
-  text-align: center;
-}
-
 .menu a {
   text-decoration: none;
 }

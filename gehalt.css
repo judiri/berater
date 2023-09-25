@@ -2,24 +2,8 @@ body {
     margin: 0;
     overflow: hidden;
     background-image: url(VBanner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
-    position: relative;
-    overflow-y: scroll;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 20%;
-    height: 5px; /* Die Höhe des "V"-Teils */
-    background: black; /* Weißer Hintergrund */
-    transform: translateX(-30%) rotate(-45deg); /* Rotieren und positionieren */
-    z-index: 1; /* Über dem Hintergrundbild */
+    width: 20vw;
+    height: 100px;
 }
 
 /* Ändern Sie den Stil der Scrollleiste nach Ihren Wünschen */

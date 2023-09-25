@@ -4,6 +4,11 @@ body {
     background-image: url(VBanner.png);
     width: 20vw;
     height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    position: relative;
 }
 
 /* Ändern Sie den Stil der Scrollleiste nach Ihren Wünschen */

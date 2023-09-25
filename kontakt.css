@@ -86,13 +86,12 @@ nav a {
   color: #000;
 }
 
-.menu a:hover {
-  background-color: lightblue;
-  border-radius: 5px;
+.menu li:last-child {
+  margin-right: 0;
 }
 
-.menu nav ul li a.active {
-  color: lightblue;
+.menu a:hover {
+  border-bottom: 2px solid violet; 
 }
 
 footer {

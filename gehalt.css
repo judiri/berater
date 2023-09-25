@@ -11,6 +11,18 @@ body {
     position: relative;
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20%;
+    height: 5px; /* Die Höhe des "V"-Teils */
+    background: black; /* Weißer Hintergrund */
+    transform: translateX(-30%) rotate(-45deg); /* Rotieren und positionieren */
+    z-index: 1; /* Über dem Hintergrundbild */
+}
+
 /* Ändern Sie den Stil der Scrollleiste nach Ihren Wünschen */
 ::-webkit-scrollbar {
     width: 10px; /* Breite der Scrollleiste */

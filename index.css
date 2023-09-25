@@ -118,6 +118,9 @@ nav a {
 }
 
 p{
+  border-radius: 50px 50px;
+  margin-left: auto;
+  padding: 10px 20px;
   font-weight: bold;
   text-align: center;
 }
